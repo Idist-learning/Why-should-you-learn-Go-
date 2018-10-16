@@ -18,10 +18,10 @@
 * packages_variables_functions
     * packages - [readme](basics/packages_variables_functions/1.packages/readme.md)  - [demo](basics/packages_variables_functions/1.packages/main.go)
 
-    * imports - [readme](basics/packages_variables_functions/1.imports/readme.md)  - [demo](basics/packages_variables_functions/2.imports/main.go)
+    * imports - [readme](basics/packages_variables_functions/2.imports/readme.md)  - [demo](basics/packages_variables_functions/2.imports/main.go)
 
-    * exported names
+    * exported names - [readme](basics/packages_variables_functions/3.exported_names/readme.md)  - [demo](basics/packages_variables_functions/3.exported_names/main.go)
 
-    * functions
+    * functions- [readme](basics/packages_variables_functions/4.functions/readme.md)  - [demo](basics/packages_variables_functions/4.functions/main.go)
 
     * functions countinued
