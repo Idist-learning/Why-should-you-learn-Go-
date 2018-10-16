@@ -26,7 +26,7 @@
 
     * functions countinued - [readme](basics/packages_variables_functions/5.functions_countinued/readme.md)  - [demo](basics/packages_variables_functions/5.functions_countinued/main.go)
 
-    * multiple results 
+    * multiple results - [readme](basics/packages_variables_functions/6.multiple_results/readme.md)  - [demo](basics/packages_variables_functions/6.multiple_results/main.go)
 
     * name return values
 
