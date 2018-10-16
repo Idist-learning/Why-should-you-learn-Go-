@@ -1,4 +1,5 @@
 Hello, world
+
 Chào mừng bạn tới khóa học về ngôn ngữ lập trình Go.
 
 Khóa học được chia thành một danh sách các module mà bạn có thể truy cập bằng việc click vào A Tour of Go ở phía trên bên trái của trang.
