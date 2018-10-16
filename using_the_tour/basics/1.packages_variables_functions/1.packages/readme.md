@@ -4,8 +4,6 @@ Các chương trình đều chạy từ package main
 
 Chương trình này sử dụng package được import từ đường dẫn "fmt" và "math/rand".
 
-By convention, the package name is the same as the last element of the import path. For instance, the "math/rand" package comprises files that begin with the statement package rand.
-Theo quy ước, một tên của package giống với 
+Theo quy ước, một tên của package giống với thành phần cuối cùng của đường dẫn. Ví dụ, package "math/rand" sẽ chứa các file mà được bắt đầu với package chứa thành phần rand.
 
-Note: The environment in which these programs are executed is deterministic, so each time you run the example program rand.Intn will return the same number. (To see a different number, seed the number generator; see rand.Seed. Time is constant in the playground, so you will need to use something else as the seed.)
-
+Chú ý: môi trường mà các chương trình này thực thi đã được xác định vì thế mỗi lần bạn chạy các ví dụ của hàm rand.Intn đều sẽ trả về cùng một giá trị. ( để nhận được số khác nhau, việc tạo ra số này tham khảo hàm rand.Seed.Time như một hằng số trên playground, vì thế bạn sẽ sử dụng một thứ khác để tạo ra nó.)
