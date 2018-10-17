@@ -28,8 +28,10 @@
 
     * multiple results - [readme](basics/packages_variables_functions/6.multiple_results/readme.md)  - [demo](basics/packages_variables_functions/6.multiple_results/main.go)
 
-    * name return values
+    * name return values - [readme](basics/packages_variables_functions/7.named_return_values/readme.md)  - [demo](basics/packages_variables_functions/7.named_return_values/main.go)
 
-    * variables
+    * variables - [readme](basics/packages_variables_functions/8.variables/readme.md)  - [demo](basics/packages_variables_functions/8.variables/main.go)
 
-    * variables with initializers
+    * variables with initializers - [readme](basics/packages_variables_functions/9.variables_with_initializers/readme.md)  - [demo](basics/packages_variables_functions/9.variables_with_initializers/main.go)
+
+    
