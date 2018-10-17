@@ -34,4 +34,4 @@
 
     * variables with initializers - [readme](basics/packages_variables_functions/9.variables_with_initializers/readme.md)  - [demo](basics/packages_variables_functions/9.variables_with_initializers/main.go)
 
-    
+    * short variable declarations - [readme](basics/packages_variables_functions/10.short_with_declarations/readme.md)  - [demo](basics/packages_variables_functions/10.short_with_declarations/main.go)
