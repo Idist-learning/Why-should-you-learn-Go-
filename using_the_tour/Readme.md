@@ -40,10 +40,10 @@
 
     * zezo types - [readme](basics/packages_variables_functions/12.zezo_types/readme.md)  - [demo](basics/packages_variables_functions/12.zezo_types/main.go)
 
-    * type conversions
+    * type conversions- [readme](basics/packages_variables_functions/13.type_conversions/readme.md)  - [demo](basics/packages_variables_functions/13.type_conversions/main.go)
 
-    * type inference
+    * type inference - [readme](basics/packages_variables_functions/14.type_inference/readme.md)  - [demo](basics/packages_variables_functions/14.type_inference/main.go)
 
-    * constants
+    * constants - [readme](basics/packages_variables_functions/15.contants/readme.md)  - [demo](basics/packages_variables_functions/15.contants/main.go)
 
-    * numeric contants
+    * numeric contants - [readme](basics/packages_variables_functions/16.numeric_contants/readme.md)  - [demo](basics/packages_variables_functions/16.numeric_contants/main.go)
