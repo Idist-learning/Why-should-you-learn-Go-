@@ -16,7 +16,7 @@ Trong bài viết này tôi sẽ không dạy bạn viết "Hello World!!" như 
 
 [Luật của Moore](http://www.investopedia.com/terms/m/mooreslaw.asp) đang lỗi thời dần.
 
-Chip xử lý Pentium 4 đầu tiên với xung nhịp 3.0GHz được [giới thiệu từ trước năm 2004 bởi Intel](http://www.informit.com/articles/article.aspx?p=339073). Ngày nay, chiếc [Macbook Pro 2016](http://www.apple.com/macbook-pro/specs/) lại có xung nhịp là 2.9GHz. Vì thế, trong gần một thập kỉ, không có quá nhiều lợi ích từ sức mạnh trong quá trình xử lý nguyên thuỷ. Bạn có thể so sánh việc phát triển sức mạnh của việc xử lý theo thời gian trong biểu đồ sau.
+Chip xử lý Pentium 4 đầu tiên với xung nhịp 3.0GHz được [giới thiệu từ trước năm 2004 bởi Intel](http://www.informit.com/articles/article.aspx?p=339073). Ngày nay, chiếc [Macbook Pro 2016](http://www.apple.com/macbook-pro/specs/) lại có xung nhịp là 2.9GHz. Vì thế, trong gần một thập kỉ, không có quá nhiều sự gia tăng về hiệu năng bộ xử lý. Bạn có thể so sánh việc phát triển hiệu năng xử lý theo thời gian trong biểu đồ sau.
 
 ![](https://cdn-images-1.medium.com/max/800/1*Azz7YwzYYR6lDKFj8iIGZg.png)
 
@@ -28,8 +28,7 @@ Vì thế, để giải quyết các vấn đề trên,
 * Chúng ta cũng giới thiệu về đa luồng.
 * Thêm nhiều cache vào vi xử lý hơn để tăng hiệu năng.
 
-Nhưng những giải pháp trên cũng có những giới hạn của chúng. Chúng ta không thể thêm quá nhiều cache vào vi xử lý để tăng hiệu năng vì cache cũng có giới 
-hạn vật lý: cache càng lớn thì tốc độ càng chậm. Thêm nhiều core vào vi xử lý thì nó cũng tốn nhiều chi phí. Ngoài ra nó cũng không thể mở rộng vô hạn. Các vi xử lý đa nhân có thể chạy nhiều luồng cùng một lúc và gây ra ảnh hưởng lẫn nhau vào tình huống này. Chúng ta sẽ thảo luận lại vấn đề này sau
+Nhưng những giải pháp trên cũng có những giới hạn của chúng. Chúng ta không thể thêm quá nhiều cache vào vi xử lý để tăng hiệu năng vì cache cũng có giới hạn vật lý: cache càng lớn thì tốc độ càng chậm. Thêm nhiều core vào vi xử lý thì nó cũng tốn nhiều chi phí. Ngoài ra nó cũng không thể mở rộng vô hạn. Các vi xử lý đa nhân có thể chạy nhiều luồng cùng một lúc và gây ra ảnh hưởng lẫn nhau vào tình huống này. Chúng ta sẽ thảo luận lại vấn đề này sau
 
 Vì thế nếu chúng ta không thể áp dụng các cải thiện về mặt phần cứng, cách duy nhất để tăng hiệu năng là thực hiện cải thiện phần mềm. Nhưng  đáng buồn là nhiều ngôn ngữ hiện lại lại không được hiệu quả lắm.
 
@@ -40,7 +39,7 @@ Vì thế nếu chúng ta không thể áp dụng các cải thiện về mặt 
 
 ### **Go có các Goroutine**
 
-Như chúng ta đã thảo luận ở trên, các nhà sản xuất phần cứng đang cố gắng bổ sung nhiều lõi hơn vào vi xử lý để tăng hiệu năng. Tất cả các dữ liệu trung tâm đều chạy trên những vi xử lý đó và chúng ta dựu kiến sẽ tăng số lượng lõi trong những năm sắp tới. Thêm vào đó, những ứng dụng ngày nay sử dụng đồng thời nhiều dịch vụ nhỏ khác để duy trì các kết nối tới cơ sở dữ liệu, các tin nhắn trên hàng đợi và duy trì bộ nhớ cache. Vì thế, những phần mềm chúng ta phát triển và những ngôn ngữ lập trình phải hỗ tính đồng thời một cách dễ dàng và nó phải có khả năng mở rộng khi tăng số lượng lõi lên.
+Như chúng ta đã thảo luận ở trên, các nhà sản xuất phần cứng đang cố gắng bổ sung nhiều lõi hơn vào vi xử lý để tăng hiệu năng. Tất cả các dữ liệu trung tâm đều chạy trên những vi xử lý đó và chúng ta kỳ vọng sẽ tăng số lượng lõi trong những năm sắp tới. Thêm vào đó, những ứng dụng ngày nay sử dụng đồng thời nhiều dịch vụ nhỏ khác để duy trì các kết nối tới cơ sở dữ liệu, các tin nhắn trên hàng đợi và duy trì bộ nhớ cache. Vì thế, những phần mềm chúng ta phát triển và những ngôn ngữ lập trình phải hỗ tính đồng thời một cách dễ dàng và nó phải có khả năng mở rộng khi tăng số lượng lõi lên.
 
 Nhưng hầu hết các ngôn ngữ lập trình hiện đại (như Java, Python,...) đều xuất phát từ môi trường đơn luồng ở thập niên 90. Hầu hết các ngôn ngữ lập trình đều hỗ trợ đa luồng. Nhưng vấn đề thực sự là xử lý đồng thời, khoá luồng, loại điều kiện và khoá chết. Những điều này mới tạo ra một ứng dụng đa luồng trên các ngôn ngữ này.
 
@@ -66,7 +65,7 @@ Những quan điểm trên khiến Go trở lên mạnh mẽ để xử lý đ�
 
 * * *
 
-**Go chạy trực tiếp trên phần cứng cơ bản**
+**Go chạy trực tiếp trên nền tảng phần cứng**
 
 Lợi ích đáng kể nhất khi sử dụng C, C++ so với các ngôn ngữ bậc cao khác như Java/Python là hiệu năng của chúng. Vì C/C++ được biên dịch mà không cần thông dịch.
 
